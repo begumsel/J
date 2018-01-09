@@ -1,0 +1,45 @@
+.container{
+	height: 100%;
+
+	background: #ffd9bd;
+	margin: 0;
+	padding: 0.5em;
+
+	display: grid;
+	grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "n m m a"
+    "n m m a"
+    "b b b a"
+    "f f f f";
+}
+
+.nav{
+	background: #7dbaff;
+	grid-area: n;
+}
+
+.nav li{
+	
+}
+
+aside{
+	background: #d8bfde;
+	grid-area: a;
+}
+
+main{
+	background: #fff07d;
+	grid-area: m;
+}
+
+.bottom{
+	background: #d1c541;
+	grid-area: b;
+}
+
+footer{
+	background: #7dbaff;
+	grid-area: f;
+}
